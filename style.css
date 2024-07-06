@@ -1,0 +1,185 @@
+/* Estilização geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #750370;
+    color: #000;
+}
+
+/* Estilização dos divs */
+.container {
+    background-color: #f5f5f5;
+    max-width: 3000px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    padding-bottom: 4em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#abstract, #result {
+    padding-top: 1.6em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#form {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 240px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 0.6em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+    display: none;
+}
+
+/* Estilização dos textos */
+h1 {
+    text-align: center;
+    padding-top: 0.8em;
+    margin-bottom: 0.8em;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.6em;
+    margin-bottom: 1.6em;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 1.6em;
+}
+
+/* Estilização do formulário */
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#lblPeso {
+    margin-left: 160px;
+}
+
+input[type="number"] {
+    width: 30%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #b400ab;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #750370;
+}
+
+#input-incorret {
+    margin-left: 240px;
+}
+
+/* Estilização da tabela */
+table {
+    border-collapse: collapse;
+    margin: 0 auto 3em auto;
+    width: 70%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: none;
+    padding: 1em;
+    text-align: center;
+}
+
+th {
+    background-color: #fca2f7;
+}
+
+#classification {
+    border-radius: 10px 0 0 0;
+}
+
+#weight {
+    border-radius: 0 10px 0 0;
+}
+
+#fourthCla {
+    border-radius: 0 0 0 10px;
+}
+
+#fourthWei {
+    border-radius: 0 0 10px 0;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1090px) {
+    #form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #form {
+        width: 80%;
+        height: 300px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #lblPeso {
+        margin-left: 0;
+    }
+
+    label {
+        margin-bottom: 4px;
+    }
+
+    input[type="number"] {
+        margin-bottom: 0;
+    }
+
+    button {
+        background-color: #b400ab;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+}

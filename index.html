@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <noscript>O JavaScript está desativado em seu navegador</noscript>
+    <div class="container">
+        <h1>Calculadora IMC</h1>
+        <hr>
+        <div id="abstract">
+            <p>Descubra o seu índice de massa corporal (IMC) e o intervalo de peso ideal para a sua altura com esta
+                calculadora online.</p>
+            <p>Além de calcular o valor de IMC, esta calculadora também indica qual a classificação do IMC de acordo com
+                os
+                seguintes critérios:</p>
+                <table id="table-result">
+                    <thead>
+                        <tr>
+                            <th id="classification">CLASSIFICAÇÃO</th>
+                            <th>IMC</th>
+                            <th id="weight">PESO (kg)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td  id="firstCla">Abaixo do peso</td>
+                            <td  id="first">&lt; 18.5</td>
+                            <td  id="firstWei">&lt; 54.7</td>
+                        </tr>
+                        <tr>
+                            <td id="secondCla">Peso normal</td>
+                            <td id="second">18.5 a 24.9</td>
+                            <td id="secondWei">54.7 a 73.7</td>
+                        </tr>
+                        <tr>
+                            <td id="thirdCla">Sobrepeso</td>
+                            <td id="third">25 a 29.9</td>
+                            <td id="thirdWei">73.7 a 88.8</td>
+                        </tr>
+                        <tr>
+                            <td id="fourthCla">Obesidade</td>
+                            <td id="fourth">≥ 30</td>
+                            <td id="fourthWei">&gt; 88.8</td>
+                        </tr>
+                    </tbody>
+                </table>
+            <p>Ter um peso dentro do intervalo de peso ideal ajuda ainda a evitar o aparecimento de várias doenças
+                crônicas,
+                como diabetes e hipertensão.</p>
+            <p>Coloque os seus dados na calculadora e calcule o seu IMC:</p>
+        </div>
+        <div id="form">
+            <form>
+                <label for="peso" id="lblPeso"><b>Peso (kg):</b></label>
+                <input type="number" name="peso" id="peso" value="">
+                <br>
+                <label for="altura"><b>Altura (metros ou centímetros):</b></label>
+                <input type="number" name="altura" id="altura" value="">
+            </form>
+            <br>
+            <button id="calcular">Calcular</button>
+        </div>
+        <br>
+        <span id="input-incorret"></span>
+        <div id="result">
+            <span id="imc-result"></span>
+            <br>
+            <br>
+            <span id="classification-result"></span>
+        </div>
+        <br>
+        <div  id="abstract">
+            <h2>Como é feito o cálculo de IMC</h2>
+            <p>O IMC é calculado dividindo o peso (kg) pela altura ao quadrado (m), de acordo com a seguinte fórmula:
+                <b>IMC = peso / (altura * altura)</b>.</p>
+            <p>O resultado de IMC é dado em kg/m<sup>2</sup>.</p>
+        </div>
+    </div>
+</body>
+
+</html>
